@@ -12,12 +12,17 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    src/pref.cpp
+    src/pref.cpp \
+    src/prefview.cpp \
+    src/controller.cpp
 
 HEADERS  += mainwindow.h \
-    inc/pref.h
+    inc/pref.h \
+    inc/prefview.h \
+    inc/controller.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    forms/prefview.ui
 
 RESOURCES += \
     resources.qrc

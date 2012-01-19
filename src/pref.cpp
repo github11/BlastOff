@@ -3,25 +3,25 @@
 Pref::Pref(){
 }
 
-Pref::Pref(string n, string v):name(n), value(v){
+Pref::Pref(string n, string v):_name(n), _value(v){
 }
 
 void Pref::SetName(string n){
-    name=n;
+    _name=n;
 }
 
 void Pref::SetValue(string v){
-    value=v;
+    _value=v;
 }
 
 string Pref::GetName(){
-    return name;
+    return _name;
 }
 
 string Pref::GetValue(){
-    return value;
+    return _value;
 }
 
 string Pref::GetBatchFormat(){
-    return name;
+    return _name;
 }

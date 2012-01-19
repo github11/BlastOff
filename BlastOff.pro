@@ -26,3 +26,6 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     resources.qrc
+
+# Boost library location on Andy's machine
+INCLUDEPATH += "e:\\programming\\lib\\boost_1_47_0"

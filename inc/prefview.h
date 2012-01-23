@@ -18,8 +18,8 @@ public:
     void SetPref(Pref * p);
 
 private:
-    Ui::PrefView *_ui;
-    Pref * _pref;
+    Ui::PrefView *ui_;
+    Pref * pref_;
 };
 
 #endif // PREFVIEW_H

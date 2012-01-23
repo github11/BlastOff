@@ -3,14 +3,14 @@
 
 PrefView::PrefView(QWidget * parent) :
     QWidget(parent),
-    _ui(new Ui::PrefView) {
-    _ui->setupUi(this);
+    ui_(new Ui::PrefView) {
+    ui_->setupUi(this);
 }
 
 PrefView::~PrefView() {
-    delete _ui;
+    delete ui_;
 }
 
 void PrefView::SetPref(Pref * p){
-    _pref = p;
+    pref_ = p;
 }

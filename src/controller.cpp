@@ -4,7 +4,7 @@
 #include <string>
 
 using namespace std;
-Controller::Controller(MainWindow * w): _ui(w){
+Controller::Controller(MainWindow * w): ui_(w){
     vector<string> sourceprefs;
     sourceprefs.push_back("Apples");
     sourceprefs.push_back("Pears");
@@ -12,11 +12,11 @@ Controller::Controller(MainWindow * w): _ui(w){
     sourceprefs.push_back("Pteradactyls");
 
     BOOST_FOREACH(string s, sourceprefs){
-        _prefList.push_back(new Pref(s));
+        prefList_.push_back(new Pref(s));
     }
 
-    BOOST_FOREACH(Pref * p, _prefList){
-        _ui->AddPref(p);
+    BOOST_FOREACH(Pref * p, prefList_){
+        ui_->AddPref(p);
     }
 }
 

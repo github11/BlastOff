@@ -3,27 +3,27 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow),
-    prefsLay(new QVBoxLayout)
+    ui_(new Ui::MainWindow),
+    prefsLay_(new QVBoxLayout)
 {
-    ui->setupUi(this);
-    ui->WigList->setLayout(prefsLay);
-    prefsLay->setSpacing(0);
-    prefsLay->setContentsMargins(0, 0, 0, 0);
-    prefsLay->addStretch();
+    ui_->setupUi(this);
+    ui_->WigList->setLayout(prefsLay_);
+    prefsLay_->setSpacing(0);
+    prefsLay_->setContentsMargins(0, 0, 0, 0);
+    prefsLay_->addStretch();
 }
 
 MainWindow::~MainWindow()
 {
     // TODO add functionality to clean up all UI elements
     // generated with code. Also, delete the layout object.
-    delete ui;
+    delete ui_;
 }
 
 void MainWindow::AddPref(Pref * p){
     QWidget * wptr = new PrefView;
-    prefsViewVec.push_back(wptr);
+    prefsViewVec_.push_back(wptr);
     ((PrefView*)wptr)->SetPref(p);
 
-    prefsLay->insertWidget(0, wptr);
+    prefsLay_->insertWidget(0, wptr);
 }

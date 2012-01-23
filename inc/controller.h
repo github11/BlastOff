@@ -12,8 +12,8 @@ public:
 
 private:
     // Member variables:
-    MainWindow * _ui;
-    vector<Pref *> _prefList;
+    MainWindow * ui_;
+    vector<Pref *> prefList_;
 };
 
 #endif // Controller_H

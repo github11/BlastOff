@@ -17,8 +17,8 @@ public:
     string GetBatchFormat();
 private:
     // Member Variables:
-    string _name;
-    string _value;
+    string name_;
+    string value_;
 };
 
 #endif

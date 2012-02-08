@@ -1,4 +1,10 @@
+# Preference.py
+# 2/8/2012
+# Anthony Hall
+# anthrond@gmail.com
+
 class Preference:
+    """Represents a single Renderman(tm) rendering option"""
 
     def __init__(self):
         self._name = "Default Preference Name"
@@ -20,9 +26,9 @@ class Preference:
     @name.setter
     def name(self, value):
         self._name = value
-    @name.deleter
-    def name(self):
-        del self._name
+#    @name.deleter
+#    def name(self):
+#        del self._name
 
     @property
     def command_text(self):
@@ -42,6 +48,6 @@ class Preference:
     @value.setter
     def value(self, value):
         self._value = value
-    @value.deleter
-    def value(self):
-        del self._value
+#    @value.deleter
+#    def value(self):
+#        del self._value
